@@ -1,0 +1,24 @@
+<template name="sessionLista">
+  <div class="row">
+    <div class="col-xl-12">
+      {{#each tarefas}}
+      <div class="row">
+        <div class="col-xl-10">{{nome}}</div>
+        <div class="col-xl-1">
+          <button id="atualizar" class="btn btn-warning">Atualizar</button>
+        </div>
+        <div class="col-xl-1">
+          <button
+            id="excluir"
+            taskId="{{taskId}}"
+            class="btn btn-outline-danger"
+          >
+            Excluir
+          </button>
+        </div>
+      </div>
+      <hr />
+      {{/each}}
+    </div>
+  </div>
+</template>

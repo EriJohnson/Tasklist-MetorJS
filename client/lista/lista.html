@@ -1,0 +1,18 @@
+<template name="lista">
+  <div class="row">
+    <div class="col-xl-12">
+      {{#each tarefas}}
+      <div class="row">
+        <div class="col-xl-10"><strong>{{formataData}}</strong> - {{nome}}</div>
+        <div class="col-xl-1">
+          <button id="atualizar" class="btn btn-warning">Atualizar</button>
+        </div>
+        <div class="col-xl-1">
+          <button id="excluir" class="btn btn-outline-danger">Excluir</button>
+        </div>
+      </div>
+      <hr />
+      {{/each}}
+    </div>
+  </div>
+</template>
