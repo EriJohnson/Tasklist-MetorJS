@@ -14,7 +14,7 @@ Template.sessionLista.events({
 
     const tasks = Session.get('tasks')
 
-    const filtedTasks = tasks.filter(task => task.taskId !== taskId)
+    const filtedTasks = tasks.filter(task => task.taskId != taskId)
 
     Session.set('tasks', filtedTasks)
   },
